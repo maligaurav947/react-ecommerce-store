@@ -1,50 +1,63 @@
 import { data } from "autoprefixer";
 import React from "react";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
 function Feature() {
-  const feature = [
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5,
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+    },
+  };
+  const slides = [
     {
-      img: "https://images.unsplash.com/photo-1549298916-b41d501d3772?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=812&q=80",
-      title: "Brown Nike Sneaker",
-      button: "Buy Now",
+      image:
+        "https://plus.unsplash.com/premium_photo-1669703777692-0289d224bcc7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     },
     {
-      img: "https://images.unsplash.com/photo-1491553895911-0055eca6402d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHNob2VzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
-      title: "Unparied Grey Running",
-      button: "Buy Now",
+      image:
+        "https://images.unsplash.com/photo-1611912901957-80caca8de69a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGNsb3RoaW5nJTIwbW9kZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     },
     {
-      img: "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=879&q=80",
-      title: "White Black Sneaker Nike",
-      button: "Buy Now",
+      image:
+        "https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTR8fGNsb3RoaW5nfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
     },
     {
-      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      title: "Unparied Red",
-      button: "Buy Now",
+      image:
+        "https://images.unsplash.com/photo-1572495641004-28421ae52e52?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhpbmclMjBtb2RlbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
     },
   ];
   return (
     <main className="mt-5">
       <h3 className="pl-5 text-5xl">Features</h3>
-      <div
-        className={`grid grid-flow-row lg:grid-flow-col grid-cols-${feature.length} gap-2 p-5 h-full`}
-      >
-        {feature.map((data) => (
-          <div className="flex flex-col  gap-2 items-start">
-            <div
-              className="feature-img rounded-md"
+      <div className={`gap-2 p-5 h-full `}>
+        <Carousel responsive={responsive}>
+          {slides.map((img) => (
+            <img
+              src={img.image}
               style={{
-                background: `url(${data.img})`,
-                height: "260px",
+                height: "80vh",
                 width: "100%",
+                objectPosition: "center",
                 objectFit: "cover",
               }}
-            ></div>
-            <h4 className="text-2xl">{data.title}</h4>
-            <button>{data.button}</button>
-          </div>
-        ))}
+            />
+          ))}
+        </Carousel>
       </div>
     </main>
   );

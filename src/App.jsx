@@ -1,7 +1,7 @@
-import "./App.css";
 import EarlyAcces from "./components/EarlyAcces";
 import Feature from "./components/Feature";
 import Hero from "./components/Hero";
+import "./App.css";
 
 function App() {
   return (

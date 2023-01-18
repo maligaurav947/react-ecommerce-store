@@ -6,6 +6,7 @@
 
 body{
  scroll-behavior: smooth;
+
 }
 
 
@@ -54,5 +55,5 @@ p,button,h3,h4,h5{
  background-position: center !important;
  background-size: cover !important;
  background-repeat: no-repeat !important;
- background-attachment: local !important;
+ background-attachment: scroll !important;
 }
