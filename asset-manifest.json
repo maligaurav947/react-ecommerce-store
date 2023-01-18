@@ -1,14 +1,17 @@
 {
   "files": {
-    "main.css": "/react-ecommerce-store/static/css/main.5be41078.css",
-    "main.js": "/react-ecommerce-store/static/js/main.0035fda9.js",
+    "main.css": "/react-ecommerce-store/static/css/main.193471a4.css",
+    "main.js": "/react-ecommerce-store/static/js/main.5df4f23d.js",
+    "static/media/revicons.eot": "/react-ecommerce-store/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/react-ecommerce-store/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/react-ecommerce-store/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/react-ecommerce-store/index.html",
     "static/media/index.cjs": "/react-ecommerce-store/static/media/index.cd351d7c31d0d3fccf96.cjs",
-    "main.5be41078.css.map": "/react-ecommerce-store/static/css/main.5be41078.css.map",
-    "main.0035fda9.js.map": "/react-ecommerce-store/static/js/main.0035fda9.js.map"
+    "main.193471a4.css.map": "/react-ecommerce-store/static/css/main.193471a4.css.map",
+    "main.5df4f23d.js.map": "/react-ecommerce-store/static/js/main.5df4f23d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5be41078.css",
-    "static/js/main.0035fda9.js"
+    "static/css/main.193471a4.css",
+    "static/js/main.5df4f23d.js"
   ]
 }
