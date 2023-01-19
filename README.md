@@ -33,7 +33,7 @@ Install my-project with npm
 
 **Front End** - React , Tailwindcss 
 **Dependencies** -
-  ``bash
+  ```bash
       "@headlessui/react": "^1.7.7",
       "@react-icons/all-files": "^4.1.0",
       "@testing-library/jest-dom": "^5.16.5",
@@ -46,5 +46,5 @@ Install my-project with npm
       "react-router-dom": "^6.6.2",
       "react-scripts": "5.0.1",
       "web-vitals": "^2.1.4"
-  ``
+  ```
 
