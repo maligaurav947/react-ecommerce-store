@@ -1,7 +1,7 @@
 
-# React Color Generator
+# React E-commerce Store
 
-A Simple React Color Generator App 
+A Fully Responsive React E-commerce Store Us in Tailwand CSS 
 
 ## Demo
 
