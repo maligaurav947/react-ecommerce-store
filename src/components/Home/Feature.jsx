@@ -54,6 +54,7 @@ function Feature() {
                 objectPosition: "center",
                 objectFit: "cover",
               }}
+              className="opacity-75 hover:opacity-100 transition-transform"
             />
           ))}
         </Carousel>
