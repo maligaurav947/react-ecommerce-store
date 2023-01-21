@@ -2,7 +2,8 @@ import React from "react";
 import EarlyAcces from "./EarlyAcces";
 import Feature from "./Feature";
 import Header from "../Header/Header";
-import Product from "./Product";
+import Product from "./Product/Product";
+
 function Hero() {
   return (
     <>
@@ -30,8 +31,8 @@ function Hero() {
         </main>
       </section>
       <Feature />
-      <EarlyAcces />
       <Product />
+      <EarlyAcces />
     </>
   );
 }
