@@ -20,7 +20,17 @@ h4,
 h5 {
   font-family: "Work Sans", sans-serif !important;
 }
-/* CSS */
+
+.feature-img {
+  background-position: center !important;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-attachment: scroll !important;
+}
+.boxshadow{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
 .button-87 {
   margin: 10px;
   padding: 15px 30px;
@@ -56,7 +66,6 @@ h5 {
 .button-87:active {
   transform: scale(0.95);
 }
-
 .feature-img {
   background-position: center !important;
   background-size: cover !important;

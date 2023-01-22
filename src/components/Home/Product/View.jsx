@@ -1,7 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import ProductData from "./ProductData";
 import Productsitems from "./../../Extra/Productsitems";
-
+import { TfiHome } from "react-icons/tfi";
 const View = () => {
   const { id } = useParams();
   const item = ProductData.find((post) => post.id == id);
@@ -9,16 +9,19 @@ const View = () => {
 
   return (
     <>
-      <div className="absolute top-2 left-5">
+      <div className="absolute top-1 left-2">
         <Link to="/">
-          <pre className="text-2xl">Back To Home</pre>
+          <pre className="text-2xl flex items-center align-middle button-54 gap-2">
+            <TfiHome />
+            Home
+          </pre>
         </Link>
       </div>
       <section
         class="text-gray-700 body-font overflow-hidden bg-white"
         id="top"
       >
-        <div class="container px-5 py-24 h-screen  mx-auto">
+        <div class="container px-5 py-24 mx-auto">
           <div class="lg:w-4/5 items-center  justify-evenly mx-auto flex flex-wrap">
             <img
               alt="ecommerce"

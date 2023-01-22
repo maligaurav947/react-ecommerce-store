@@ -61,9 +61,7 @@ function Productsitems() {
                 </ul>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-extrabold">₹{post.price}.00</p>
-                  <button className="bg-emerald-500 text-white font-medium p-2 rounded-md">
-                    Add To Card
-                  </button>
+                  <button className="button-3">Add To Card</button>
                 </div>
               </div>
             </li>
@@ -105,9 +103,7 @@ function Productsitems() {
                 </ul>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-extrabold">₹{post.price}.00</p>
-                  <button className="bg-emerald-500 text-white font-medium p-2 rounded-md">
-                    Add To Card
-                  </button>
+                  <button className="button-3">Add To Card</button>
                 </div>
               </div>
             </li>
@@ -149,9 +145,7 @@ function Productsitems() {
                 </ul>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-extrabold">₹{post.price}.00</p>
-                  <button className="bg-emerald-500 text-white font-medium p-2 rounded-md">
-                    Add To Card
-                  </button>
+                  <button className="button-3">Add To Card</button>
                 </div>
               </div>
             </li>
