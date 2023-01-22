@@ -1,16 +1,10 @@
 import React from "react";
+import { HiOutlineShoppingBag } from "react-icons/hi";
 
 function Card() {
   return (
     <>
-      <div
-        className="w-96 h-screen z-20 fixed top-0 right-0 bg-slate-100"
-        style={{
-          zIndex: "9999",
-        }}
-      >
-        Hello
-      </div>
+      <HiOutlineShoppingBag className="text-4xl absolute right-2 top-2" />
     </>
   );
 }

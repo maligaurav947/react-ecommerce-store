@@ -1,10 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import Carousel from "react-multi-carousel";
 import ProductData from "../Home/Product/ProductData";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
+import { HiOutlineShoppingBag } from "react-icons/hi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function Productsitems() {
+  const [card, setCard] = useState([]);
+  const handlerclick = (post) => {
+    card.push(post);
+    console.log(card);
+  };
   const responsive = {
     superLargeDesktop: {
       // the naming can be any, depends on you.
@@ -26,6 +34,8 @@ function Productsitems() {
   };
   return (
     <>
+      <ToastContainer />
+
       <h3 className="pl-5 pb-5 text-5xl">Kids Section</h3>
       <Carousel responsive={responsive} className="w-full">
         {ProductData.slice(0, 10).map((post, id) => (
@@ -61,7 +71,15 @@ function Productsitems() {
                 </ul>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-extrabold">₹{post.price}.00</p>
-                  <button className="button-3">Add To Card</button>
+                  <button
+                    className="p-3 flex items-center gap-2 font-normal  bg-blue-800 text-white rounded-lg"
+                    onClick={() => {
+                      handlerclick(post);
+                      toast.success("The Item Was Added To Card");
+                    }}
+                  >
+                    Add To <HiOutlineShoppingBag />
+                  </button>
                 </div>
               </div>
             </li>
@@ -103,7 +121,15 @@ function Productsitems() {
                 </ul>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-extrabold">₹{post.price}.00</p>
-                  <button className="button-3">Add To Card</button>
+                  <button
+                    className="p-3 flex items-center gap-2 font-normal  bg-blue-800 text-white rounded-lg"
+                    onClick={() => {
+                      handlerclick(post);
+                      toast.success("The Item Was Added To Card");
+                    }}
+                  >
+                    Add To <HiOutlineShoppingBag />
+                  </button>
                 </div>
               </div>
             </li>
@@ -145,7 +171,15 @@ function Productsitems() {
                 </ul>
                 <div className="flex items-center justify-between">
                   <p className="text-xl font-extrabold">₹{post.price}.00</p>
-                  <button className="button-3">Add To Card</button>
+                  <button
+                    className="p-3 flex items-center gap-2 font-normal  bg-blue-800 text-white rounded-lg"
+                    onClick={() => {
+                      handlerclick(post);
+                      toast.success("The Item Was Added To Card");
+                    }}
+                  >
+                    Add To <HiOutlineShoppingBag />
+                  </button>
                 </div>
               </div>
             </li>
