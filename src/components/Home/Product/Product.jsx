@@ -37,13 +37,13 @@ function Product() {
       </Carousel>
       <h3 className="pl-5 pt-5 pb-5 text-5xl">Men Section</h3>
       <Carousel responsive={responsive} className="w-full">
-        {ProductData.slice(10, 20).map((post, id) => (
+        {ProductData.slice(10, 20).map((post) => (
           <ProducitemsData key={post.id} post={post} />
         ))}
       </Carousel>
       <h3 className="pl-5 pt-5 pb-5 text-5xl">Women Section</h3>
       <Carousel responsive={responsive} className="w-full">
-        {ProductData.slice(20, 30).map((post, id) => (
+        {ProductData.slice(20, 30).map((post) => (
           <>
             <ProducitemsData key={post.id} post={post} />
           </>
