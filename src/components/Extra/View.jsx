@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import ProductData from "./ProductData";
-import Productsitems from "./../../Extra/Productsitems";
+import Product from "../Home/Product/Product";
 import { TfiHome } from "react-icons/tfi";
 const View = () => {
   const { id } = useParams();

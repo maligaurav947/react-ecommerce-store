@@ -1,14 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import EarlyAcces from "./EarlyAcces";
 import Feature from "./Feature";
 
 import Product from "./Product/Product";
-import Card from "./../Extra/Card";
 
 function Hero() {
   return (
     <>
-      <Card />
       <section
         className="p-2 grid items-center lg:flex h-screen justify-center"
         style={{
