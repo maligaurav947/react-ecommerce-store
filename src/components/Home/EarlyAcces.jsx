@@ -1,6 +1,10 @@
-import React from "react";
-
+import Aos from "aos";
+import React, { useEffect } from "react";
+import "aos/dist/aos.css";
 function EarlyAcces() {
+  useEffect(() => {
+    Aos.init({ once: true, duration: 1000 });
+  });
   return (
     <>
       <section className="">
@@ -8,6 +12,7 @@ function EarlyAcces() {
         <main className="grid grid-cols-1 lg:grid-cols-2 gap-2 p-5 h-screen">
           <div
             className="relative"
+            data-aos="fade-right"
             style={{
               backgroundImage:
                 "url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/6a0593a1-de9a-43e5-ace5-b2e591835654/nike-just-do-it.jpg)",
@@ -23,6 +28,7 @@ function EarlyAcces() {
           </div>
           <div
             className="relative"
+            data-aos="fade-left"
             style={{
               backgroundImage:
                 "url(https://static.nike.com/a/images/f_auto/dpr_1.3,cs_srgb/w_706,c_limit/de59b9e3-f252-469b-a7fb-c3e0043be98b/nike-just-do-it.jpg)",

@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 import { HiOutlineShoppingBag } from "react-icons/hi";
 import { AiFillStar } from "react-icons/ai";
 
-function ProducitemsData({ post }) {
+function ProducitemsData({ post, handleClick }) {
   const { id, img, title, price } = post;
   const [card, setCard] = useState([]);
   const handlerclick = (post) => {
@@ -46,9 +46,7 @@ function ProducitemsData({ post }) {
           <p className="text-xl font-extrabold">₹{price}.00</p>
           <button
             className="p-3 flex items-center gap-2 font-normal  bg-blue-800 text-white rounded-lg"
-            onClick={() => {
-              handlerclick(post);
-            }}
+            onClick={() => handleClick(post)}
           >
             Add To <HiOutlineShoppingBag />
           </button>
