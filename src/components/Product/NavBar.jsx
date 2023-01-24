@@ -3,7 +3,7 @@ import { AiOutlineShopping } from "react-icons/ai";
 const Navbar = ({ setShow, size }) => {
   return (
     <nav
-      className="fixed top-0 right-0"
+      className="fixed top-3 right-3"
       style={{
         zIndex: "999999",
       }}

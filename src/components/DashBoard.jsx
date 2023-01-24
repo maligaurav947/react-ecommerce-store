@@ -1,11 +1,9 @@
 import React, { useEffect, useState } from "react";
-import Feature from "./Home/Feature";
-import Product from "./Home/Product/Product";
+
 import EarlyAcces from "./Home/EarlyAcces";
 import Hero from "./Home/Hero";
 import Loader from "./Extra/Loader";
-import Cart from "./Home/Product/Card";
-import Navbar from "./Home/Product/NavBar";
+
 import Footer from "./Home/Footer";
 function DashBoard() {
   const [loaded, setLoaded] = useState(false);

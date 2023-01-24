@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Feature from "./Feature";
-import Cart from "./Product/Card";
-import Navbar from "./Product/NavBar";
-import Product from "./Product/Product";
+import Cart from "../Product/Card";
+
+import Navbar from "./../Product/NavBar";
+import Product from "./../Product/Product";
 
 function Hero() {
   const [show, setShow] = useState(true);

@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "react-multi-carousel";
-import ProductData from "../../Extra/ProductData";
+import ProductData from "../Extra/ProductData";
 import { ToastContainer } from "react-toastify";
 import ProducitemsData from "./ProducitemsData";
 import "react-toastify/dist/ReactToastify.css";
