@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { toast } from "react-toastify";
 
 const Cart = ({ cart, setCart, handleChange }) => {
   const [price, setPrice] = useState(0);
@@ -42,7 +43,14 @@ const Cart = ({ cart, setCart, handleChange }) => {
                 <button>{item.amount}</button>
                 <button onClick={() => handleChange(item, -1)}>-</button>
               </div>
-              <button onClick={() => handleRemove(item.id)}>Remove</button>
+              <button
+                onClick={() => {
+                  toast.success("Item Was Succesfuly Remove in card");
+                  handleRemove(item.id);
+                }}
+              >
+                Remove
+              </button>
             </div>
           </div>
         ))}

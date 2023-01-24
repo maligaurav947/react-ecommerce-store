@@ -46,7 +46,10 @@ function ProducitemsData({ post, handleClick }) {
           <p className="text-xl font-extrabold">₹{price}.00</p>
           <button
             className="p-3 flex items-center gap-2 font-normal  bg-blue-800 text-white rounded-lg"
-            onClick={() => handleClick(post)}
+            onClick={() => {
+              handleClick(post);
+              toast.success("Item Added To Card");
+            }}
           >
             Add To <HiOutlineShoppingBag />
           </button>

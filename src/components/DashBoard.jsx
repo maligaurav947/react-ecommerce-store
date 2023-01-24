@@ -6,6 +6,7 @@ import Hero from "./Home/Hero";
 import Loader from "./Extra/Loader";
 import Cart from "./Home/Product/Card";
 import Navbar from "./Home/Product/NavBar";
+import Footer from "./Home/Footer";
 function DashBoard() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -22,8 +23,8 @@ function DashBoard() {
       ) : (
         <>
           <Hero />
-
           <EarlyAcces />
+          <Footer />
         </>
       )}
     </>
