@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 function EarlyAcces() {
   useEffect(() => {
-    Aos.init({ once: true, duration: 1000 });
+    Aos.init({ once: true, duration: 1000, disable: "mobile" });
   });
   return (
     <>
