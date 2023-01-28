@@ -9,12 +9,12 @@ export default function Navbar({}) {
       <nav className=" flex flex-wrap items-center justify-between px-2 z-50 text-black bg-white sticky top-0  py-3 mb-3">
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-            <a
-              className="text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase "
-              href="#pablo"
+            <Link
+              to="/"
+              className="text-2xl font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase"
             >
               GABBAR CLUB
-            </a>
+            </Link>
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
               type="button"
