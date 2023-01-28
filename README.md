@@ -9,7 +9,7 @@ See it Live [HERE](https://maligaurav947.github.io/react-ecommerce-store/)
 
 ## Version
 
-V.01
+V.1.01
 
 ## Clone this Repo
 
