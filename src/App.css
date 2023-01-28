@@ -11,6 +11,14 @@ body {
 
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap");
 
+::-webkit-scrollbar-thumb{
+  background-color: #1e40af;
+}
+::-webkit-scrollbar{
+  width: 10px;
+  background-color: white;
+}
+
 h2 {
   font-family: "Nunito", sans-serif !important;
 }

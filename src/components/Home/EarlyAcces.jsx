@@ -3,13 +3,12 @@ import React, { useEffect } from "react";
 import "aos/dist/aos.css";
 function EarlyAcces() {
   useEffect(() => {
-    Aos.init({ once: true, duration: 1000, disable: "mobile" });
+    Aos.init({ once: true, duration: 2000, disable: "mobile" });
   });
   return (
     <>
-      <section className="">
-        <h3 className="pl-5 text-5xl">Nike App Early Access</h3>
-        <main className="grid grid-cols-1 lg:grid-cols-2 gap-2 p-5 h-screen">
+      <section className="mb-10 mt-10 gap-5 p-5">
+        <main className="grid grid-cols-1 lg:grid-cols-2 gap-2 h-screen">
           <div
             className="relative"
             data-aos="fade-right"

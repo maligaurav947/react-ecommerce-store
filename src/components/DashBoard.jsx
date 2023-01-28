@@ -1,10 +1,14 @@
 import React, { useEffect, useState } from "react";
-
 import EarlyAcces from "./Home/EarlyAcces";
 import Hero from "./Home/Hero";
-import Loader from "./Extra/Loader";
+import Loader from "./Extra/assets/Loader";
+import Footer from "./Footer/Footer";
+import Nav from "./Header/Nav";
+import Company from "./Extra/Company";
+import Weekoffer from "./Extra/Weekoffer";
+import Header from "./Header/Header";
+import ShowCase from "./Home/ShowCase";
 
-import Footer from "./Home/Footer";
 function DashBoard() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -20,8 +24,13 @@ function DashBoard() {
         <Loader />
       ) : (
         <>
+          <Nav />
+          <Header />
           <Hero />
+          <ShowCase />
+          <Company />
           <EarlyAcces />
+          <Weekoffer />
           <Footer />
         </>
       )}
