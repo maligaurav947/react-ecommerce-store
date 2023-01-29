@@ -3,6 +3,7 @@ import Carousel from "react-multi-carousel";
 import ProductLayout from "../ProductLayout";
 import ProductData from "./../../Extra/ProductData";
 import "react-multi-carousel/lib/styles.css";
+import Navbar from "../../Header/Header";
 function KidsProduct(handleClick) {
   const responsive = {
     superLargeDesktop: {
@@ -24,13 +25,29 @@ function KidsProduct(handleClick) {
     },
   };
   return (
-    <div className="w-full">
-      <Carousel responsive={responsive} className="w-full">
-        {ProductData.slice(0, 10).map((post) => (
-          <ProductLayout key={post.id} post={post} handleClick={handleClick} />
-        ))}
-      </Carousel>
-    </div>
+    <>
+      <Navbar />
+      <div className="w-full">
+        <Carousel responsive={responsive} className="w-full">
+          {ProductData.slice(0, 10).map((post) => (
+            <ProductLayout
+              key={post.id}
+              post={post}
+              handleClick={handleClick}
+            />
+          ))}
+        </Carousel>
+        <Carousel responsive={responsive} className="w-full">
+          {ProductData.slice(10, 20).map((post) => (
+            <ProductLayout
+              key={post.id}
+              post={post}
+              handleClick={handleClick}
+            />
+          ))}
+        </Carousel>
+      </div>
+    </>
   );
 }
 

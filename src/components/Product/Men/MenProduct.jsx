@@ -26,7 +26,12 @@ function MenProduct(handleClick) {
   return (
     <div className="w-full">
       <Carousel responsive={responsive} className="w-full">
-        {ProductData.slice(11, 20).map((post) => (
+        {ProductData.slice(21, 30).map((post) => (
+          <ProductLayout key={post.id} post={post} handleClick={handleClick} />
+        ))}
+      </Carousel>
+      <Carousel responsive={responsive} className="w-full">
+        {ProductData.slice(30, 40).map((post) => (
           <ProductLayout key={post.id} post={post} handleClick={handleClick} />
         ))}
       </Carousel>

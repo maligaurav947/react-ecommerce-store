@@ -30,6 +30,11 @@ function WomenProduct(handleClick) {
           <ProductLayout key={post.id} post={post} handleClick={handleClick} />
         ))}
       </Carousel>
+      <Carousel responsive={responsive} className="w-full">
+        {ProductData.slice(21, 30).map((post) => (
+          <ProductLayout key={post.id} post={post} handleClick={handleClick} />
+        ))}
+      </Carousel>
     </div>
   );
 }

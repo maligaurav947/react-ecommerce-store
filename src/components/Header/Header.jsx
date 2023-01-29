@@ -6,7 +6,12 @@ export default function Navbar({}) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
-      <nav className=" flex flex-wrap items-center justify-between px-2 z-50 text-black bg-white sticky top-0  py-3 mb-3">
+      <nav
+        className=" flex flex-wrap items-center justify-between px-2 text-black bg-white sticky top-0  py-3 mb-3"
+        style={{
+          zIndex: "999999",
+        }}
+      >
         <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
           <div className="w-full flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
             <Link
