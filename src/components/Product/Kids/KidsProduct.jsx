@@ -3,7 +3,7 @@ import Carousel from "react-multi-carousel";
 import ProductLayout from "../ProductLayout";
 import ProductData from "./../../Extra/ProductData";
 import "react-multi-carousel/lib/styles.css";
-import Navbar from "../../Header/Header";
+import Navbar from "./../../Header/Header";
 function KidsProduct(handleClick) {
   const responsive = {
     superLargeDesktop: {

@@ -9,9 +9,7 @@ function Company() {
         loop={0}
         gradientWidth="0"
         pauseOnHover={true}
-        className={
-          "grid grid-cols-7 place-content-center gap-5 p-5 overflow-hidden"
-        }
+        className={"grid grid-cols-8 place-content-center  p-5 overflow-hidden"}
       >
         <img
           src="https://inkbotdesign.com/wp-content/uploads/2015/07/Superdry-Logo-Design.png?ezimgfmt=ng:webp/ngcb15"
@@ -39,6 +37,10 @@ function Company() {
         />
         <img
           src="https://inkbotdesign.com/wp-content/uploads/2015/07/Levis-Logo-Design.png?ezimgfmt=ng:webp/ngcb15"
+          className="h-24 w-24 lg:w-52 lg:h-52"
+        />
+        <img
+          src="https://www.adgully.com/img/800/201911/mufti-logo_2.jpg"
           className="h-24 w-24 lg:w-52 lg:h-52"
         />
       </Marquee>

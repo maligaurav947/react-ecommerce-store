@@ -8,7 +8,6 @@ import Footer from "./../Footer/Footer";
 function Product() {
   return (
     <>
-      <Header />
       <KidsProduct />
       <MenProduct />
       <WomenProduct />

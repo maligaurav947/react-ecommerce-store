@@ -7,14 +7,18 @@
 body {
   scroll-behavior: smooth;
   overflow-x: hidden !important;
-}
 
+}
+* {
+  outline: none !important
+}
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600&display=swap");
 
-
+*::selection {
+  background-color: rgb(180, 177, 177) !important;
+}
 ::-webkit-scrollbar{
   width: 0px !important;
-
 }
 
 h2 {
