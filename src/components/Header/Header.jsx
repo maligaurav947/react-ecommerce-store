@@ -1,8 +1,11 @@
 import React from "react";
 import { GoThreeBars } from "react-icons/go";
 import { Link } from "react-router-dom";
-
+import { FcGoogle } from "react-icons/fc";
+import { MdWavingHand } from "react-icons/md";
+import { signInWithGoogle } from "./../DB/Firebase";
 export default function Navbar({}) {
+  const [account, setAccount] = React.useState(false);
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -61,6 +64,7 @@ export default function Navbar({}) {
                   About Me
                 </a>
               </li>
+
               <li className="nav-item">
                 <Link
                   to="/contact"
@@ -70,6 +74,39 @@ export default function Navbar({}) {
                   Contact
                 </Link>
               </li>
+              <li
+                className="nav-item cursor-pointer"
+                onClick={() => {
+                  signInWithGoogle();
+                  setAccount(!account);
+                }}
+              >
+                <a className="px-3 py-2 flex items-center text-sm uppercase gap-2 font-bold leading-snug  hover:opacity-75">
+                  {!account ? (
+                    <>
+                      <FcGoogle size={15} />
+                      Login With Google
+                    </>
+                  ) : (
+                    <>
+                      <MdWavingHand size={15} /> {/* */}{" "}
+                      {sessionStorage.getItem("name")}
+                    </>
+                  )}
+                </a>
+              </li>
+              {account ? (
+                <li
+                  className="nav-item cursor-pointer"
+                  onClick={() => {
+                    setAccount(!account);
+                  }}
+                >
+                  <a className="px-3 py-2 flex items-center text-sm uppercase font-bold leading-snug  hover:opacity-75">
+                    Log out
+                  </a>
+                </li>
+              ) : null}
             </ul>
           </div>
         </div>

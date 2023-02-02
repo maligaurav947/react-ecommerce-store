@@ -8,7 +8,8 @@ import Company from "./Extra/Company";
 import Weekoffer from "./Extra/Weekoffer";
 import Header from "./Header/Header";
 import ShowCase from "./Home/ShowCase";
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 function DashBoard() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
@@ -24,6 +25,21 @@ function DashBoard() {
         <Loader />
       ) : (
         <>
+          <ToastContainer
+            position="top-right"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            style={{
+              zIndex: "999999999",
+            }}
+          />
           <Nav />
           <Header />
           <Hero />
