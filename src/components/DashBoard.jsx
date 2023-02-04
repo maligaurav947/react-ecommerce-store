@@ -13,7 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 function DashBoard() {
   const [loaded, setLoaded] = useState(false);
   useEffect(() => {
-    let timer = setTimeout(() => setLoaded(true), 2000);
+    let timer = setTimeout(() => setLoaded(true), 0);
     return () => {
       clearTimeout(timer);
     };

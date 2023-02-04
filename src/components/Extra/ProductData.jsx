@@ -235,12 +235,145 @@ const ProductData = [
     img: "https://m.media-amazon.com/images/I/61oTB9F5y0L._AC_UL480_FMwebp_QL65_.jpg",
     price: 1500,
   },
+  //Women
   {
     id: 40,
     title: "Men Cloting",
     img: "https://m.media-amazon.com/images/I/61r81T8faQL._AC_UL480_FMwebp_QL65_.jpg",
     price: 599,
   },
-  //Women
+  {
+    id: 41,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/61OVY9tLuvL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 399,
+  },
+  {
+    id: 42,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/81ntDWA4ViL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 659,
+  },
+  {
+    id: 43,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/810V+wvcCJL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 759,
+  },
+  {
+    id: 44,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/71P-qc+vyML._AC_UL480_FMwebp_QL65_.jpg",
+    price: 350,
+  },
+  {
+    id: 45,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/61KzT2OrERL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 680,
+  },
+  {
+    id: 46,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/71Xy186ZyYL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 857,
+  },
+  {
+    id: 47,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/61tUk1maVuL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 599,
+  },
+  {
+    id: 48,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/61Wfq81WBlL._AC_UL480_QL65_.jpg",
+    price: 1599,
+  },
+  {
+    id: 49,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/81Sm8s25SQL._AC_UL480_QL65_.jpg",
+    price: 1500,
+  },
+  {
+    id: 50,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/41+s2TxNf6L._AC_UL480_FMwebp_QL65_.jpg",
+    price: 599,
+  },
+  {
+    id: 51,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/71EvrbzkhCL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 599,
+  },
+  {
+    id: 52,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/71VrwxwQfpL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 399,
+  },
+  {
+    id: 53,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/71uUSbJd90L._AC_UL480_FMwebp_QL65_.jpg",
+    price: 659,
+  },
+  {
+    id: 54,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/71gVr0ZP2sL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 759,
+  },
+  {
+    id: 54,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/81kDI4r4jkL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 350,
+  },
+  {
+    id: 55,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/61XUqWtxRsL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 680,
+  },
+  {
+    id: 56,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/81CqpfspSkL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 857,
+  },
+  {
+    id: 57,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/51yW2HeFTkL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 599,
+  },
+  {
+    id: 58,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/91+mgjQeI0L._AC_UL480_FMwebp_QL65_.jpg",
+    price: 1599,
+  },
+  {
+    id: 59,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/61l-NI3IXIL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 1500,
+  },
+
+  {
+    id: 60,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/51DoJVdSLWL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 599,
+  },
+  {
+    id: 61,
+    title: "Women Cloting",
+    img: "https://m.media-amazon.com/images/I/51DoJVdSLWL._AC_UL480_FMwebp_QL65_.jpg",
+    price: 599,
+  },
 ];
 export default ProductData;
